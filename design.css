@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgba(0, 0, 0, 0.479); */
+}
+@font-face {
+    font-family: firacode;
+    src: url(Fonts/FiraCode-Medium.ttf);
+}
+body{
+    background-color: #000000e8;
+    color: #ffff;
+   
+}
+.active{
+   color: red;
+}
+.hidden{
+   opacity: 0;
+   filter: blur(6px);
+   transition: all 1s;
+   transform: scale(0);
+   transform: translateX(-50%);
+}
+.show{
+   opacity: 1;
+   filter: blur(0);
+   transition: all 1s;
+   transform: translateX(0%);
+   transform: scale(1);
+}
+.flex {
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+   cursor: pointer;
+
+    position: fixed;
+    transition: .2s;
+    top: 0;
+    left: 0;
+    z-index: 999;
+ }
+ .headerScroll{
+   background-color: #97edaac5;
+   transition: .2s;
+   backdrop-filter: blur(10px);
+ }
+ .headerScroll h1{
+   color: #000000e8;
+ }
+ .headerScroll nav li a{
+   color: #000000e8;
+   font-weight: lighter;
+   transition: .2s;
+  
+ }
+ .headerScroll nav li a:hover{
+   color: #fffffff1;
+   transition: .2s;
+ }
+ header h1{
+    font-family: firacode;
+    font-size: 18pt;
+    color: #97edaa;
+ }
+ nav ul{
+    list-style-type: none;
+ }
+ nav ul {
+    display: flex;
+    gap: 50px;
+ }
+ nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+nav ul li a:hover{
+   color: #97edaa;
+}
+ section{
+    width: 100vw;
+    height: 100vh;
+ }
+
+ section.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+ }
+ section.inicio h1 span{
+    color: #97edaa;
+    font-family: firacode;
+    font-size: 35pt;
+ }
+ section.inicio button{
+    padding: 12px 40px;
+    margin-top: 16px;
+    background-color: #97edaa;
+    font-weight: 600;
+    transition: .2s;
+
+ }
+ section.inicio button:hover{
+   background-color: transparent;
+   border: 1px solid #97edaa;
+   transition: .2s;
+   color: white;
+  
+ }
+
+ /* Section Sobre Mim */
+ section.sobremim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ section.sobremim h1{
+    text-align: center;
+ }
+ section.sobremim h1 span{
+    color: #97edaa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35pt;
+ }
+ .itensSobremim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 0.288);
+    padding: 49px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    transition: .2s;
+    }
+    .itensSobremim:hover{
+      background-color: #97edaa00;
+      transition: .2s;
+      border: 1px solid #97edaa;
+    }
+.eu{
+    margin-top: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .iconsSobremim{
+    margin-top: 80px;
+    display: flex;
+    gap: 60px;
+ }
+ .textosobremim{
+   line-height: 22px;
+   font-weight: lighter;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .itenTexto p{
+    margin-top: -10px;
+    font-family: firacode;
+ }
+ h4{
+    text-align: center;
+    font-family: firacode;
+ }
+
+
+ /* Projectos */
+ section.contaonerProjectos{
+   margin: 0 auto;
+ }
+ section.contaonerProjectos h1{
+    color: #97edaa;
+    font-family: firacode;
+    font-size: 35pt;
+    text-align: center;
+    margin-bottom: 30px;
+ }
+ section.projectos{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-auto-rows: 290px;
+    gap: 50px;
+    justify-content: center;
+ }
+
+ .projetosCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .cardimagem{
+    width: 500px;
+    height: 210px;
+    background-color: #ffffff15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #ffffff21;
+    border-radius: 5px;
+ }
+ .cardimagem span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: #97edaa;
+ }
+ .cardtexto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .cardtexto h3{
+    margin-top: 10px;
+ }
+ .cardbotao{
+    display: flex;
+    gap: 14px;
+ }
+ .cardbotao button{
+    padding: 6px 35px;
+    font-family: firacode;
+    font-weight: 400;
+ }
+ .btnCor{
+    background-color: #97edaa;
+ }
+ .btnBorda{
+    background-color: #97edaa00;
+    border: 1px solid #97edaa;
+    color: #97edaa;
+ }
+
+ /* Serviços */
+ section.Serviços{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: firacode;
+ }
+ section.Serviços h1{
+   color: #97edaa;
+   font-family: firacode;
+   font-size: 35pt;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ .containerServicos{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   gap: 20px;
+
+ }
+ .cardServicos{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   scale: 1;
+
+   width: 400px;
+   height: 300px;
+   border: 1px solid #97edaa4b;
+   border-radius: 8px;
+   background-color: #ffffff10;
+   transition: .2s;
+ }
+ .cardServicos:hover{
+   transform: scale(1.1);
+   background-color: #97edaa;
+   position: relative;
+   
+   transition: .2s;
+   color: #000000f1;
+ }
+ .cardServicos:hover svg{
+   fill: #000000f1;
+ }
+
+ .cardServicoTexto h2{
+   text-align: center;
+ }
+
+ /* Habilidades */
+ section.habilidades{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: firacode;
+ }
+ section.habilidades h1{
+   color: #97edaa;
+   font-family: firacode;
+   font-size: 35pt;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ 
+ .containerHabilidades{
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+  
+   display: grid;
+   grid-template-columns: repeat(2, 400px);
+   justify-content: center;
+   gap: 20px;
+   padding: 20px;
+   background-color: #ffffff07;
+ }
+ .cardHabilidades{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+
+   width: 400px;
+   height: 200px;
+   border: 1px solid #97edaa4b;
+   border-radius: 8px;
+   background-color: #ffffff10;
+ }
