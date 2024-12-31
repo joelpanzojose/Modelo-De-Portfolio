@@ -10,11 +10,7 @@
 }
 body{
     background-color: #000000e8;
-    color: #ffff;
-   
-}
-.active{
-   color: red;
+    color: #ffff; 
 }
 .hidden{
    opacity: 0;
@@ -206,6 +202,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
  }
  .cardimagem{
     width: 500px;
@@ -234,11 +231,13 @@ nav ul li a:hover{
  .cardbotao{
     display: flex;
     gap: 14px;
+   
  }
  .cardbotao button{
     padding: 6px 35px;
     font-family: firacode;
     font-weight: 400;
+    cursor: pointer;
  }
  .btnCor{
     background-color: #97edaa;
@@ -277,6 +276,7 @@ nav ul li a:hover{
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   cursor: pointer;
    scale: 1;
 
    width: 400px;
@@ -319,9 +319,7 @@ nav ul li a:hover{
  }
  
  .containerHabilidades{
-   /* display: flex;
-   justify-content: center;
-   align-items: center; */
+ 
   
    display: grid;
    grid-template-columns: repeat(2, 400px);

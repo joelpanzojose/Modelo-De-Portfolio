@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
         cabeca.setAttribute("class"," ")
     }
     
-});
+})
 
 const observador = new IntersectionObserver((entries) =>{
   entries.forEach((entry)=>{
@@ -23,41 +23,32 @@ const elementos = document.querySelectorAll('.hidden')
 elementos.forEach((el) => observador.observe(el))
 
 
-let sections = document.querySelectorAll('section');
-let linkNav = document.querySelectorAll('header nav ul li a');
+const menuLinks = document.querySelectorAll(".menu a")
 
-window.onscroll = () => {
-    sections.forEach((sec) => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+function positionelement(elemento){
+    const id = elemento.getAttribute("href")
+    return document.querySelector(id).offsetTop
+}
 
-        // Verifica se o scroll está dentro do intervalo do section
-        if (top >= offset && top < offset + height) {
-            linkNav.forEach((links) => {
-                links.classList.remove('active');
-            });
-            document.querySelector('header nav ul li a [href*="' + id + '"]').classList.add('active');
-        }
-    });
-};
+function scrollnativo(distanciadotopo){
+    window.scroll({
+        top: distanciadotopo,
+        behavior: "smooth"
+    })
+}
 
+function sCrollTosection(event){
+    event.preventDefault();
+    const el = event.target
+    const id = el.getAttribute("href")
+    const section = document.querySelectorAll(id)
 
-// let sections = document.querySelectorAll('section')
-// let linkNav = document.querySelectorAll('header nav ul li a')
-// window.scroll = () =>{
-//     sections.forEach((sec)=>{
-//         let top = window.screenY
-//         let offset = sec.offsetTop
-//         let height = sec.offsetHeight
-//         let id = sec.getAttribute('id')
+    const distanciadotopo = positionelement(event.target) - 90
+    scrollnativo(distanciadotopo)
 
-//         if(top >= offset && offset + height){
-//             linkNav.forEach(links =>{
-//                 links.classList.remove('active')
-//                 document.querySelector('header nav ul li a[href*=' + id +']').classList.add('active')
-//             })
-//         }
-//     })
-// }
+    console.log(section)
+}
+console.log(menuLinks)
+menuLinks.forEach((link)=>{
+    link.addEventListener("click", sCrollTosection)
+})
