@@ -52,3 +52,14 @@ console.log(menuLinks)
 menuLinks.forEach((link)=>{
     link.addEventListener("click", sCrollTosection)
 })
+
+const tema = document.getElementById("tema")
+const btntrocarEscuro = document.getElementById('trocarEscuro')
+const btntrocarClaro = document.getElementById('trocarClaro')
+
+btntrocarEscuro.addEventListener("click",()=>{
+    tema.href = "css/escuro.css"
+})
+btntrocarClaro.addEventListener("click",()=>{
+    tema.href = "css/claro.css"
+})

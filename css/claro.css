@@ -27,7 +27,7 @@
 svg{
     fill: var(--blue);
 }
-.iconModoEscuro{
+.paraEscuro{
     width: 20px;
     height: 20px;
     fill: #2b2b2b;
@@ -374,5 +374,4 @@ nav ul li a:hover{
  }
  .cardHabilidades svg{
     fill: var(--blue);
-
  }
