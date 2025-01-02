@@ -12,10 +12,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
+    /* Sobre Mim */
+    .eu {
+        font-size: 14px; 
+        line-height: 1.6;
+        margin: 20px;
+        padding: 10px; 
+      }
 
+   .iconsSobremim{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px;
+   }
 
 
 
