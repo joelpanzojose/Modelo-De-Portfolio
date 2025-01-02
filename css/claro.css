@@ -23,7 +23,15 @@
     --white: #e6f1ff;
     --green: #64ffda;
 }
-
+.listlateral{
+   background-color: var(--blue);
+   backdrop-filter: blur(10px);
+    color: black;
+}
+.listlateral li a:hover{
+   background-color: #bf79f8;
+   color: black;
+ }
 svg{
     fill: var(--blue);
 }
