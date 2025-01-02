@@ -27,10 +27,13 @@
 svg{
     fill: var(--blue);
 }
+.menuhamburger{
+   display: none;
+}
 .paraEscuro{
     width: 20px;
     height: 20px;
-    fill: #2b2b2b;
+    fill: var(--blue);
 }
 .paraClaro{
    display: none;

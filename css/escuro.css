@@ -25,6 +25,9 @@
 svg{
    fill: var(--mygreen);
 }
+.menuhamburger{
+   display: none;
+}
 body{
     background-color: #000000e8;
     color: #ffff; 

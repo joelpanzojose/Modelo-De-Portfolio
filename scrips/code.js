@@ -53,6 +53,7 @@ menuLinks.forEach((link)=>{
     link.addEventListener("click", sCrollTosection)
 })
 
+// Tema Esuro e Tema Claro
 const tema = document.getElementById("tema")
 const btntrocarEscuro = document.getElementById('trocarEscuro')
 const btntrocarClaro = document.getElementById('trocarClaro')
@@ -67,4 +68,30 @@ btntrocarClaro.addEventListener("click",()=>{
     tema.href = "css/claro.css"
        btntrocarEscuro.style.display = "block"
        btntrocarClaro.style.display = "none"
+})
+
+// Menu lateral
+const mostrar = document.getElementById("burger")
+const ocultar = document.getElementById("cross")
+const links = document.querySelectorAll("a")
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+         document.getElementById("menulateral").style.display = 'none'
+          ocultar.style.display = 'none'
+          mostrar.style.display = 'block'
+    })
+})
+
+mostrar.addEventListener("click",()=>{
+    document.getElementById("menulateral").style.display = 'block'
+    document.getElementById("menulateral").style.transition = '.2s'
+   
+    ocultar.style.display = 'block'
+    mostrar.style.display = 'none'
+})
+ocultar.addEventListener("click",()=>{
+    document.getElementById("menulateral").style.display = 'none'
+    ocultar.style.display = 'none'
+    mostrar.style.display = 'block'
 })

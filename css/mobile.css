@@ -5,10 +5,60 @@
    body{
     margin-top: 80px;
    }
+   .menuhamburger{
+    display: block;
+ }
+ .menuhamburger svg{
+    width: 20px;
+    display: block;
+ }
+ .menulateral{
+    display: none;
+ }
+
+ 
+ .listlateral li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .listlateral li a{
+    color: #fff;
+    font-weight: lighter;
+    transition: .2s;
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav ul li a:hover{
+    color: #fff;
+ }
+.listlateral{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    height: 100vh;
+    background-color: var(--blue);
+    color: #fff;
+    width: 30%;
+    text-align: center; 
+}
+.listlateral li a:hover{
+    background-color: #ffffffa9;
+    color: var(--blue);
+   
+  }
+ .cross{
+    display: none;
+ }
 
     .menu{
         display: none;
     }
+
     .inicio{
         margin-top: 100px;
     }
@@ -44,9 +94,6 @@
     flex-direction: column;
     gap: 10px;
     
-    /* display: grid;
-    grid-template-columns: repeat(2, 300px);
-    gap: 10px; */
    }
 
    /* Section Projectos */
@@ -89,7 +136,6 @@
  
     width: 300px;
     height: 300px;
-    border: 1px solid #97edaa4b;
     border-radius: 8px;
     background-color: #ffffff10;
     transition: .2s;
