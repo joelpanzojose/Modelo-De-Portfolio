@@ -353,8 +353,6 @@ nav ul li a:hover{
  }
  .cardHabilidades{
    display: flex; 
-   justify-content: center;
-   align-items: center;
    flex-direction: column;
   
 

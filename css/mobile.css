@@ -1,9 +1,22 @@
 @media (max-width: 767px) {
     /* Estilos específicos para celulares */
+
+ 
+   body{
+    margin-top: 80px;
+   }
+
     .menu{
         display: none;
     }
-  
+    .inicio{
+        margin-top: 100px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
     section{
         width: 100vw;
         height: 100vh;
@@ -22,11 +35,94 @@
         padding: 10px; 
       }
 
+      section.sobremim{
+        margin-top: 100px ;
+        margin-bottom: 150px;
+      }
    .iconsSobremim{
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    
+    /* display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px; */
    }
+
+   /* Section Projectos */
+   section.projectos{
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-auto-rows: 290px;
+    gap: 50px;
+    justify-content: center;
+ }
+
+ /* Section Servicos */
+ section.Serviços{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: firacode;
+    margin-top: 650px;
+    margin-bottom: 200px;
+  }
+
+  .containerServicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+ 
+  }
+  .cardServicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    scale: 1;
+ 
+    width: 300px;
+    height: 300px;
+    border: 1px solid #97edaa4b;
+    border-radius: 8px;
+    background-color: #ffffff10;
+    transition: .2s;
+  }
+
+
+   /* Habilidades */
+   section.habilidades{
+    display: flex;
+    padding: 0;
+    margin-left: 0;
+    flex-direction: column;
+    font-family: firacode;
+    margin-bottom: 200px;
+  }
+   .containerHabilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardHabilidades{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: #ffffff10;
+  }
+ 
 
 
 
