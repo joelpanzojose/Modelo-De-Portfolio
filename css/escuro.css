@@ -56,6 +56,9 @@ body{
    height: 20px;
    fill: #fff;
 }
+.paraEscuro{
+   display: none;
+}
  header{
    display: flex;
    justify-content: space-around;

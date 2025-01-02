@@ -32,6 +32,9 @@ svg{
     height: 20px;
     fill: #2b2b2b;
 }
+.paraClaro{
+   display: none;
+}
 body{
     background-image: linear-gradient(to right, white,rgb(212, 212, 212));
     color: rgba(0, 0, 0, 0.911); 

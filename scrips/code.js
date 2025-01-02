@@ -56,10 +56,15 @@ menuLinks.forEach((link)=>{
 const tema = document.getElementById("tema")
 const btntrocarEscuro = document.getElementById('trocarEscuro')
 const btntrocarClaro = document.getElementById('trocarClaro')
+const divIcon = document.getElementById('iconnav')
 
 btntrocarEscuro.addEventListener("click",()=>{
     tema.href = "css/escuro.css"
+    btntrocarEscuro.style.display = "none"
+    btntrocarClaro.style.display = "block"
 })
 btntrocarClaro.addEventListener("click",()=>{
     tema.href = "css/claro.css"
+       btntrocarEscuro.style.display = "block"
+       btntrocarClaro.style.display = "none"
 })

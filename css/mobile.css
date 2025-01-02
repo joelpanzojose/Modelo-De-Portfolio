@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    /* Estilos específicos para celulares */
+    .menu{
+        display: none;
+    }
+  
+    section{
+        width: 100vw;
+        height: 100vh;
+     }
+    section.inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+
+
+
+
+  }
