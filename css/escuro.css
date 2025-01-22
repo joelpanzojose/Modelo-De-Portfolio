@@ -380,3 +380,7 @@ nav ul li a:hover{
    border-radius: 8px;
    background-color: #ffffff10;
  }
+ section.contacto{
+   display: flex;
+   justify-content: center;
+ }
