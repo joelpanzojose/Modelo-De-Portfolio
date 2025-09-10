@@ -29,7 +29,8 @@ Links para redes sociais
 
 Clone o repositório
 
-git clone https://github.com/teu-username/nome-do-repo.git
+git clone https://github.com/joelpanzojose/Modelo-De-Portfólio
+.git
 
 
 Entre na pasta do projeto
